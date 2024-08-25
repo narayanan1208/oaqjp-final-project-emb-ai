@@ -29,6 +29,13 @@ def emotion_detector(text_to_analyse):
 
         # Determine the dominant emotion
         dominant_emotion = max(emotions, key=emotions.get)
+    elif response.status_code == 400:
+        anger_score = None
+        disgust_score = None
+        fear_score = None
+        joy_score = None
+        sadness_score = None
+        dominant_emotion = None
 
     return {
         'anger': anger_score,
@@ -39,8 +46,13 @@ def emotion_detector(text_to_analyse):
         'dominant_emotion': dominant_emotion
     }
 
+
+
+
+
+
 # from EmotionDetection.emotion_detection import emotion_detector
-# emotion_detector("I hate working long hours")
+# emotion_detector("Ihat1214254")
 # {"emotionPredictions":[{"emotion":{"anger":0.0132405795, "disgust":0.0020517302, 
 # "fear":0.009090992, "joy":0.9699522, "sadness":0.054984167}, "target":"", 
 # "emotionMentions":[{"span":{"begin":0, "end":26, "text":"I love this new technology"}, 
