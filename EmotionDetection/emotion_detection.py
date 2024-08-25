@@ -39,8 +39,8 @@ def emotion_detector(text_to_analyse):
         'dominant_emotion': dominant_emotion
     }
 
-# from emotion_detection import emotion_detector
-# emotion_detector("I am so happy I am doing this")
+# from EmotionDetection.emotion_detection import emotion_detector
+# emotion_detector("I hate working long hours")
 # {"emotionPredictions":[{"emotion":{"anger":0.0132405795, "disgust":0.0020517302, 
 # "fear":0.009090992, "joy":0.9699522, "sadness":0.054984167}, "target":"", 
 # "emotionMentions":[{"span":{"begin":0, "end":26, "text":"I love this new technology"}, 
